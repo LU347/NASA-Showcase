@@ -15,3 +15,5 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     // Handle any errors here
     console.error(error); // Example: Logging the error to the console
   });
+
+  
