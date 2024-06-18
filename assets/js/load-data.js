@@ -28,4 +28,4 @@ function createCard(data) {
     `;
 }
 
-fetchAPI();
+//fetchAPI();

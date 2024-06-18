@@ -67,3 +67,13 @@ h1.title{
     font-weight: 300;
     font-style: normal;
 }
+
+.home-grid {
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 64px 0 rgba(19, 20, 51, 0.37);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
