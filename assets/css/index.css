@@ -3,6 +3,7 @@
 body {
     background: rgb(17,17,36);
     background: linear-gradient(214deg, rgba(17,17,36,1) 18%, rgba(51,31,64,1) 55%, rgba(23,75,156,1) 100%);
+    height: 100vh;
 }
 
 .container {

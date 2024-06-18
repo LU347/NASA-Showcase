@@ -1,7 +1,8 @@
+
 const cardContainer = document.getElementById("cardContainer");
 
 function fetchAPI() {
-    fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    fetch('https://api.nasa.gov/planetary/apod?api_key=${process.env.API_KEY}')
     .then(response => {
         if (response.ok) {
         return response.json(); 
