@@ -17,43 +17,6 @@ h1.title{
     color: white;
 }
 
-.card {
-    min-width: 30rem;
-    max-width: 40rem;
-    height: auto;
-    margin-top: auto;
-    margin-bottom: 8rem;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 0.9rem;
-}
-
-.card .title {
-    color: black;
-    text-align: center;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: auto;
-}
-
-.card img {
-    display: flex;
-    margin: auto;
-    width: 100%;
-    border-top-left-radius: 0.79rem;
-    border-top-right-radius: 0.79rem;
-}
-
-.card p {
-    margin: 2rem;
-    line-height: 1.8;
-    text-align: center;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
 .website-header {
     display: grid;
     grid-template-columns: auto auto;
@@ -66,4 +29,36 @@ h1.title{
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: auto 375px;
+    column-gap: 30px;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 64px 0 rgba(19, 20, 51, 0.37);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card-grid {
+    display: grid; 
+    grid-template-rows: 20% 10% 35% 10% auto; 
+    row-gap: auto; 
+    color: white;
+}
+
+.card-grid h1 {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.card-grid p {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.error {
+    color: rgb(246, 52, 52);
 }

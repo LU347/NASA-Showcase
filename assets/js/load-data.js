@@ -14,7 +14,22 @@ function fetchAPI() {
        createCard(data);
     })
     .catch(error => {
-        cardContainer.innerHTML = `<h1>${error}</h1>`;
+        //Default Card
+        cardContainer.innerHTML = `
+        <div class="home-grid">
+            <div class="container">
+                <img src="./assets/images/nasa-Yj1M5riCKk4-unsplash.jpg" alt="Placeholder" height="auto" width="400px" style="border-radius: 10px">
+            </div>
+            <div class="card-grid">
+                <h1>First Untethered Spacewalk</h1>
+                <h3><em>Feb. 7, 1984</em></h3>
+                <p>For 50 years, NASA has been "suiting up" for spacewalking. In this Feb. 7, 1984 photograph of the first untethered spacewalk, NASA astronaut Bruce McCandless is in the midst of the first "field" tryout of a nitrogen-propelled backpack device called the Manned Maneuvering Unit (MMU).</p>
+                <p><em>Credit: <a href="https://www.nasa.gov/image-article/nasa-celebrates-50-years-of-spacewalking/" style="color: white" target="_blank" rel="noopener noreferrer">NASA</a></em></p>
+                <p class="error"><strong>${error}</strong></p>
+            </div>
+        </div>
+        `;
+        
     });
 }
 
