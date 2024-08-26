@@ -5,15 +5,7 @@ const Card = ({ item }) => {
         <div className="home-grid">
             <div className="container">
                 {item.media_type === 'video' ? (
-                    <video
-                        src={item.url}
-                        controls
-                        height="auto"
-                        width="400px"
-                        style={{ borderRadius: '10px' }}
-                    >
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe src={item.url} title={item.title} height="400px" width="75%"></iframe>
                 ) : (
                     <img 
                         src={item.url} 
