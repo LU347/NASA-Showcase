@@ -2,8 +2,8 @@ import React from 'react';
 
 const Card = ({ item }) => {
     return (
-        <div className="home-grid">
-            <div className="container">
+        <div className="container">
+            <div className="card-container">
                 {item.media_type === 'video' ? (
                     <iframe src={item.url} title={item.title} height="400px" width="75%"></iframe>
                 ) : (
@@ -15,8 +15,6 @@ const Card = ({ item }) => {
                         style={{ borderRadius: '10px' }} 
                     />
                 )}
-            </div>
-            <div className="card-grid">
                 <h1>{item.title}</h1>
                 <h3><em>{item.date}</em></h3>
                 <p>{item.explanation}</p>
